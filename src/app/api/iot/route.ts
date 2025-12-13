@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
   console.log("📡 ESP32 DATA:", latestData);
 
-  return NextResponse.json(latestData);
+  return NextResponse.json({ ok: true });
 }
 
 export async function GET() {
