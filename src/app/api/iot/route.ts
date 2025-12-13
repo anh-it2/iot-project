@@ -1,14 +1,12 @@
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-
-  const temp = searchParams.get("temp");
-  const humi = searchParams.get("humi");
+export async function POST(req: Request) {
+  const body = await req.json();
 
   const data = {
-    temperature: temp ? Number(temp) : null,
-    humidity: humi ? Number(humi) : null,
+    temperature: body.temperature,
+    humidity: body.humidity,
+    deviceId: body.deviceId,
     time: new Date().toISOString(),
   };
 

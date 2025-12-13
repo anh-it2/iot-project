@@ -13,7 +13,9 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch("/api/iot?temp=--&humi=--");
+      const res = await fetch("/api/iot", {
+        method: "POST",
+      });
       const json = await res.json();
       setData(json);
     };
