@@ -6,7 +6,13 @@ export async function GET(req: Request) {
   const temp = searchParams.get("temp");
   const humi = searchParams.get("humi");
 
-  console.log("📡 ESP32 DATA:", { temp, humi });
+  const data = {
+    temperature: temp ? Number(temp) : null,
+    humidity: humi ? Number(humi) : null,
+    time: new Date().toISOString(),
+  };
 
-  return NextResponse.json({ ok: true });
+  console.log("📡 ESP32 DATA:", data);
+
+  return NextResponse.json(data);
 }
