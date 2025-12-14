@@ -35,10 +35,10 @@ export default function IotPage() {
 
       const record: SensorData = {
         id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
-        indoorTemp: json.temperature1 ?? null,
-        indoorHumi: json.humidity1 ?? null,
-        outdoorTemp: json.temperature2 ?? null,
-        outdoorHumi: json.humidity2 ?? null,
+        indoorTemp: json.indoorTemp ?? null,
+        indoorHumi: json.indoorHumi ?? null,
+        outdoorTemp: json.outdoorTemp ?? null,
+        outdoorHumi: json.outdoorHumi ?? null,
         time: json.time,
         acTemp: json.acTemp,
       };
