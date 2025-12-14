@@ -48,13 +48,13 @@ export default function IotPage() {
       key: "time",
     },
     {
-      title: "Temperature (°C)",
+      title: "Indor Temperature (°C)",
       dataIndex: "temperature",
       key: "temperature",
       render: (value: number | null) => value ?? "—",
     },
     {
-      title: "Humidity (%)",
+      title: "Outdor Humidity (°C)",
       dataIndex: "humidity",
       key: "humidity",
       render: (value: number | null) => value ?? "—",
