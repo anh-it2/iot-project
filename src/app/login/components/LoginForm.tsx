@@ -48,7 +48,7 @@ export default function LoginForm({ onForgotPassword }: LoginFormProps) {
       <div className="admin-login-header">
         <div className="logo">
           <Image
-            src="/images/logo1.png"
+            src="/images/logo1.jpg"
             alt="logo"
             width={120}
             height={60}

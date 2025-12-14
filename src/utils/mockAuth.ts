@@ -7,44 +7,44 @@ export interface Company {
 
 export const companies: Company[] = [
   {
-    email: "admin@hoaphat.com.vn",
-    password: "Qwerty123456",
-    company: "hoaphat",
+    email: "student1@example.com",
+    password: "Student@123",
+    company: "student 1",
   },
   {
-    email: "admin@tng.com.vn",
-    password: "Qwerty123456",
-    company: "tng",
+    email: "student2@example.com",
+    password: "Student@123",
+    company: "student 2",
   },
   {
-    email: "admin@thanhcong.com.vn",
-    password: "Qwerty123456",
-    company: "thanhcong",
+    email: "student3@example.com",
+    password: "Student@123",
+    company: "student 3",
   },
   {
-    email: "admin@vinatex.com.vn",
-    password: "Qwerty123456",
-    company: "vinatex",
+    email: "student4@example.com",
+    password: "Student@123",
+    company: "student 4",
   },
   {
-    email: "admin@casumina.com.vn",
-    password: "Qwerty123456",
-    company: "casumina",
+    email: "student5@example.com",
+    password: "Student@123",
+    company: "student 5",
   },
   {
-    email: "admin@vrg.com.vn",
-    password: "Qwerty123456",
-    company: "vrg",
+    email: "student6@example.com",
+    password: "Student@123",
+    company: "student 6",
   },
   {
-    email: "admin@dtsvn.com.vn",
-    password: "Qwerty123456",
-    company: "dtsvn",
+    email: "student7@example.com",
+    password: "Student@123",
+    company: "student 7",
   },
   {
-    email: "admin@vingroup.com.vn",
-    password: "Qwerty123456",
-    company: "vingroup",
+    email: "student8@example.com",
+    password: "Student@123",
+    company: "student 8",
   },
 ];
 
