@@ -9,6 +9,7 @@ type SensorData = {
   id: string; // ✅ unique key
   temperature: number | null;
   humidity: number | null;
+  acTemp: number | null;
   time: string;
 };
 
@@ -26,6 +27,7 @@ export default function IotPage() {
         temperature: json.temperature ?? null,
         humidity: json.humidity ?? null,
         time: json.time,
+        acTemp: json.acTemp,
       };
 
       setData(record);
@@ -55,6 +57,12 @@ export default function IotPage() {
       title: "Humidity (%)",
       dataIndex: "humidity",
       key: "humidity",
+      render: (value: number | null) => value ?? "—",
+    },
+    {
+      title: "Temperature of controller (°C)",
+      dataIndex: "acTemp",
+      key: "acTemp",
       render: (value: number | null) => value ?? "—",
     },
   ];
